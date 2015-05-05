@@ -10,6 +10,14 @@ phpMyAdmin 是一个以PHP为基础，以Web-Base方式架构在网站主机上�
 
 #### 点击“部署最新版本“，开始部署PHPMyAdmin容器
 
+![create "PHPMyAdmin" service](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-1.png)
+
 #### 绑定您想管理的MySQL数据库实例，并设置服务别名为“mysql”
 
+![bind MySQL service](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-2.png)
+
 #### 根据您的MySQL实例参数，在启动页面的填写响应的用户名和密码
+
+![set username/password](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-3.png)
+
+![login PHPMySQL](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-5.png)
