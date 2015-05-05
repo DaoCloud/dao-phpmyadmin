@@ -4,7 +4,7 @@ phpMyAdmin 是一个以PHP为基础，以Web-Base方式架构在网站主机上�
 
 ## 版本
 
-当前版本 PHPMyAdmin 4.4.1.1
+4.4.3
 
 ## 部署
 
