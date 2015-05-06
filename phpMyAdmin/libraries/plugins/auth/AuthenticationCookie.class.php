@@ -114,11 +114,11 @@ class AuthenticationCookie extends AuthenticationPlugin
         if (file_exists(CUSTOM_HEADER_FILE)) {
             include CUSTOM_HEADER_FILE;
         }
+        $logo = $GLOBALS['pmaThemeImage'] . 'logox128.png'; 
+        echo '<img src="' . $logo .'" style="position:absolute;top:10px;height:42px;margin-left:100px;">';
         echo '
-    <div class="container">
-    $logo = $GLOBALS['pmaThemeImage'] . 'logox128.png'; 
-    echo '<img src="' . $logo .'" style="position:absolute;top:10px;height:42px;margin-left:100px;">';
-    <a href="';
+        <div class="container">
+        <a href="';
         echo PMA_linkURL('http://www.phpmyadmin.net/');
         echo '" target="_blank" class="logo">';
         $logo_image = $GLOBALS['pmaThemeImage'] . 'logo_right.png';
