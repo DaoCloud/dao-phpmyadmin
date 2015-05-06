@@ -7,14 +7,11 @@ ENV THEME_NAME metro
 RUN apt-get update
 RUN apt-get install -y mysql-client
 
-ENV PHPMYADMIN_VERSION 4.4.3
+#ENV PHPMYADMIN_VERSION 4.4.3
 ENV MAX_UPLOAD "50M"
 
-RUN wget http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/${PHPMYADMIN_VERSION}/phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.bz2 \
- && tar -xvjf /phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.bz2 -C / \
- && rm /phpMyAdmin-${PHPMYADMIN_VERSION}-english.tar.bz2 \
- && rm -r /www \
- && mv /phpMyAdmin-${PHPMYADMIN_VERSION}-english /www
+RUN rm -r /www 
+ADD phpMyAdmin/ /www/
 
 ADD metro/ /www/themes/metro/
 ADD sources/config.inc.php /
