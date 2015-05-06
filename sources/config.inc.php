@@ -54,7 +54,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['only_db'] = "$MYSQL_INSTANCE_NAME";
 
 /* Storage database and tables */
-$cfg['Servers'][$i]['pmadb'] = '';
+$cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
 $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
 $cfg['Servers'][$i]['relation'] = 'pma__relation';
 $cfg['Servers'][$i]['table_info'] = 'pma__table_info';
@@ -114,7 +114,7 @@ $cfg['SaveDir'] = '';
  * uncomment the desired line:
  * default = 'en'
  */
-//$cfg['DefaultLang'] = 'en';
+$cfg['DefaultLang'] = 'zh-cn';
 //$cfg['DefaultLang'] = 'de';
 
 /**
