@@ -4,13 +4,13 @@ phpMyAdmin 是一个以PHP为基础，以Web-Base方式架构在网站主机上�
 
 ## 版本
 
-4.4.3
+4.4.5
 
 ## 部署
 
-#### 点击“部署最新版本“，开始部署PHPMyAdmin容器
+#### 点击“部署最新版本“，开始部署phpMyAdmin容器
 
-![create "PHPMyAdmin" service](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-1.png)
+![create "PHPMyAdmin" service](https://dn-daoweb-resource.qbox.me/phpmyadmin/1-1-1.png)
 
 #### 绑定您想管理的MySQL数据库实例，并设置服务别名为“mysql”
 
