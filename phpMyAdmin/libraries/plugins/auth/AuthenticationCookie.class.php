@@ -115,7 +115,6 @@ class AuthenticationCookie extends AuthenticationPlugin
             include CUSTOM_HEADER_FILE;
         }
         echo '
-
     <div class="container">
     $logo = $GLOBALS['pmaThemeImage'] . 'logox128.png'; 
     echo '<img src="' . $logo .'" style="position:absolute;top:10px;height:42px;margin-left:100px;">';
