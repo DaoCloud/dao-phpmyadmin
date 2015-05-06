@@ -16,7 +16,7 @@ RUN wget http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/${PHPMYA
  && rm -r /www \
  && mv /phpMyAdmin-${PHPMYADMIN_VERSION}-english /www
 
-ADD metro /www/
+ADD metro/ /www/themes/metro/
 ADD sources/config.inc.php /
 ADD sources/create_user.sql /
 ADD sources/phpmyadmin-start /usr/local/bin/
