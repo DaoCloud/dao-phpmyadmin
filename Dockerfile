@@ -2,6 +2,7 @@ FROM corbinu/docker-nginx-php
 MAINTAINER Corbin Uselton corbin@openswimsoftware.com
 
 ENV MYSQL_INSTANCE_NAME this_db_dont_exist
+ENV THEME_NAME metro
 
 RUN apt-get update
 RUN apt-get install -y mysql-client
@@ -15,6 +16,8 @@ RUN wget http://downloads.sourceforge.net/project/phpmyadmin/phpMyAdmin/${PHPMYA
  && rm -r /www \
  && mv /phpMyAdmin-${PHPMYADMIN_VERSION}-english /www
 
+ADD metro /www/
+ADD toba /www/
 ADD sources/config.inc.php /
 ADD sources/create_user.sql /
 ADD sources/phpmyadmin-start /usr/local/bin/

@@ -9,6 +9,7 @@ cp /config.inc.php /www
 
 sed -i \
     -e "s|\$MYSQL_INSTANCE_NAME|$MYSQL_INSTANCE_NAME|g" \
+    -e "s|\$THEME_NAME|$THEME_NAME|g" \
     -e "s|\$MYSQL_PORT_3306_TCP_ADDR|$MYSQL_PORT_3306_TCP_ADDR|g" \
     -e "s|\$MYSQL_PORT_3306_TCP_PORT|$MYSQL_PORT_3306_TCP_PORT|g" \
     /www/config.inc.php

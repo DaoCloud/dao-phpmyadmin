@@ -22,6 +22,11 @@ $cfg['blowfish_secret'] = "THISisDANGEROUS"; /* YOU MUST FILL IN THIS FOR COOKIE
 $cfg['PmaAbsoluteUri'] = "";
 
 /*
+ * Theme
+ */
+$cfg['ThemeDefault']= "$THEME_NAME";
+
+/*
  * Servers configuration
  */
 $i = 0;
