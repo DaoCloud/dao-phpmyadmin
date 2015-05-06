@@ -20,4 +20,4 @@ phpMyAdmin 是一个以PHP为基础，以Web-Base方式架构在网站主机上�
 
 ![set username/password](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-3.png)
 
-![login PHPMySQL](https://dn-daoweb-resource.qbox.me/images/phpmyadmin/1-5.png)
+![login PHPMySQL](https://dn-daoweb-resource.qbox.me/phpmyadmin/1-5-1.png)
