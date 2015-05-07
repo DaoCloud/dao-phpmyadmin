@@ -22,6 +22,11 @@ $cfg['blowfish_secret'] = "THISisDANGEROUS"; /* YOU MUST FILL IN THIS FOR COOKIE
 $cfg['PmaAbsoluteUri'] = "";
 
 /*
+ * Disable Warning
+ */
+$cfg['PmaAbsoluteUri_DisableWarning'] = TRUE;
+
+/*
  * Theme
  */
 $cfg['ThemeDefault']= "$THEME_NAME";
@@ -53,7 +58,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 /* User used to manipulate with storage */
 $cfg['Servers'][$i]['only_db'] = "$MYSQL_INSTANCE_NAME";
 
-/* Storage database and tables */
+/* Storage database and tables 
 $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
 $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
 $cfg['Servers'][$i]['relation'] = 'pma__relation';
@@ -70,6 +75,7 @@ $cfg['Servers'][$i]['recent'] = 'pma__recent';
 $cfg['Servers'][$i]['users'] = 'pma__users';
 $cfg['Servers'][$i]['usergroups'] = 'pma__usergroups';
 $cfg['Servers'][$i]['navigationhiding'] = 'pma__navigationhiding';
+*/
 /* Contrib / Swekey authentication */
 // $cfg['Servers'][$i]['auth_swekey_config'] = '/etc/swekey-pma.conf';
 
@@ -114,8 +120,8 @@ $cfg['SaveDir'] = '';
  * uncomment the desired line:
  * default = 'en'
  */
-$cfg['DefaultLang'] = 'zh-cn';
-//$cfg['DefaultLang'] = 'de';
+$cfg['DefaultLang'] = 'zh_CN';
+$cfg['Lang'] = 'zh_CN';
 
 /**
  * default display direction (horizontal|vertical|horizontalflipped)
@@ -172,7 +178,7 @@ $cfg['DefaultLang'] = 'zh-cn';
  */
 
 
-/* Storage database and tables */
+/* Storage database and tables 
 $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
 $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
 $cfg['Servers'][$i]['relation'] = 'pma__relation';
@@ -189,6 +195,7 @@ $cfg['Servers'][$i]['recent'] = 'pma__recent';
 $cfg['Servers'][$i]['favorite'] = 'pma__favorite';
 $cfg['Servers'][$i]['savedsearches'] = 'pma__savedsearches';
 $cfg['Servers'][$i]['central_columns'] = 'pma__central_columns';
+*/
 /* Contrib / Swekey authentication */
 // $cfg['Servers'][$i]['auth_swekey_config'] = '/etc/swekey-pma.conf';
 
